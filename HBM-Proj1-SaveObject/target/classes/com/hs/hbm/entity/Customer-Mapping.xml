@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hs.hbm.entity.Customer" table="CUSTOMER">
+		<id name="custId" column="CUSTID"/>
+		<property name="custName" column="CUSTNAME"/>
+		<property name="custAddr" column="CUSTADDR"/>
+		<property name="custEmail" column="CUSTEMAIL"/>
+		<property name="custMob" column="CUSTMOB"/>
+	</class>
+</hibernate-mapping>	
+	
