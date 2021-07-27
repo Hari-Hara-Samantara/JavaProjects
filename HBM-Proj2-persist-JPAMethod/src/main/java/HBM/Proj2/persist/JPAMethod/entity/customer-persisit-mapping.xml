@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+	<hibernate-mapping>
+		<class name='HBM.Proj2.persist.JPAMethod.entity.CustomerPersist'>
+			<id name="custId" type="int">
+				<generator class="increment"/>
+			</id>
+			<property name="custName" type="string" unique="true" not-null="true"/>
+			<property name="custAddr" type="string"/>
+			<property name="custEmail" type="string" unique="true"/>
+			<property name="custMob" unique="true"/>
+		</class>
+	</hibernate-mapping>
