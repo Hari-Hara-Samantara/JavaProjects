@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"https://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+		
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+		<property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=LOCAL_PRACTISE_DB</property>
+		<property name="hibernate.connection.username">harihara_sql</property>
+		<property name="hibernate.connection.password">Test@123</property>
+		
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">create</property>
+		
+		<mapping resource="HBM/Proj3/HibernateUtil/entity/StudentDetails-mapping.xml"/>
+	</session-factory>
+</hibernate-configuration>
